@@ -12,24 +12,23 @@
     <?php
         // 0x = Hexadecimal 0b = Binário 0 = Octal
         $num = 010;
-        echo "o valor da variável é $num";
+        echo "o valor da variável é $num</br>";
 
         // var_dump() mostra as informações da variável
         $v = 45.2;
-        var_dump($v);
+        echo var_dump($v) . "</br>"; // float(45.2)
 
         $num = 3e2; // 3 x ((10)^2)
-        echo "O valor 3 X 10<sup>2</sup> é igual a $num";
+        echo "O valor 3 X 10<sup>2</sup> é igual a $num</br>"; // 300
 
         $num = (float)"950";
-        var_dump($num);
+        echo var_dump($num) . "</br>"; //
 
         $casado = false;
-        var_dump($casado);
-        echo "O valor para casado é $casado";
+        echo var_dump($casado) . "</br>";
 
         $vet = [6, 2.5, "Isabela", 3, false];
-        var_dump($vet);
+        echo var_dump($vet) . "</br>";
 
         class Pessoa {
             private string $nome;
